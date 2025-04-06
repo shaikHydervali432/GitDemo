@@ -19,6 +19,7 @@ public class TakeScreenshot {
 		driver.get("https://www.google.com/");
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src,new File("C://Users//AVU4UX744//Downloads//screenshot.png"));
+		System.out.println("Screenshot successfully captured");
 
 	}
 
